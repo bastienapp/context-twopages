@@ -25,7 +25,7 @@ const ItemCreate = () => {
             event.preventDefault();
             const newItems = [{ title: title }, ...items];
             localStorage.setItem('items', JSON.stringify(newItems));
-            setItems([{ title: title }, ...items]);
+            setItems(newItems);
             setTitle('');
           }}
         />
